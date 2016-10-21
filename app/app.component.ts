@@ -7,8 +7,7 @@ import { Meal } from './meal.model';
     <header>
       <h1>Meal Tracker</h1>
     </header>
-    <div class="col-md-6">
-     <h2>Add a Meal</h2>
+    <div class="col-md-5">
      <new-meal
       (newMealSender)="addMeal($event)"
      ></new-meal>
@@ -17,8 +16,7 @@ import { Meal } from './meal.model';
       (doneClickedSender)="doneEditing()"
       ></edit-meal>
     </div>
-    <div class="col-md-6">
-    <h2>Meals:</h2>
+    <div class="col-md-7">
     <meal-list
       [childMealList]="mealList"
       (clickSender)="showEditForm($event)"

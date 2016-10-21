@@ -1,12 +1,13 @@
-# Angular Template
+# Meal Tracker
 
-#### _10-15-16_
+#### _10-21-16_
 
 #### By _**Aimen Khakwani**_
 
 ## Description
 
-This is a Angular JavaScript template.
+A meal tracker web app made in Angular 2. Users can add meals and update them.
+<img src="resources/img/screenshot.png"  alt="a screenshot of the site">
 
 ## Setup/Installation Requirements
 

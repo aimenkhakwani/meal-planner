@@ -1,5 +1,5 @@
 body {
-  font-family: 'Arima Madurai', cursive;
+  font-family: 'Taviraj', serif;
 }
 header {
   margin-top: 0px;
@@ -8,22 +8,39 @@ header {
   height: 500px;
   background-repeat: no-repeat;
   box-shadow: 5px 5px 5px #f2f2f2;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 h1 {
+  font-family: 'Arima Madurai', cursive;
   text-align: center;
   font-size: 70px;
-  /*text-shadow: 3px 3px 3px #f2f2f2;*/
+  text-shadow: 3px 3px 3px #b2b2b2;
   color: #fff;
   padding-top: 50px;
 }
 h2 {
   text-align: center;
 }
+.container {
+  margin-bottom: 50px;
+}
 .meal-click {
   cursor: pointer;
 }
-.new-meal, .edit-meal, .all-meals {
-  padding-left: 50px;
-  padding-right: 50px;
+.new-meal, .edit-meal {
+  padding: 15px 50px;
+  border: 1px solid #f2f2f2;
+  box-shadow: 3px 3px 5px #b2b2b2;
+  text-align: center;
+}
+.all-meals {
+  padding-left: 30px;
+}
+.edit-meal {
+  margin-top: 55px;
+}
+.well {
+  border-radius: 5px;
+
+  box-shadow: 3px 3px 5px #b2b2b2;
 }

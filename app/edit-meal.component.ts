@@ -7,15 +7,12 @@ import { Meal } from './meal.model';
     <div *ngIf="childSelectedMeal" class="edit-meal">
     <h2>Edit Meal</h2>
       <div class="form-group">
-        <label>Update meal name:</label>
         <input class="form-control" [(ngModel)]="childSelectedMeal.name">
       </div>
       <div class="form-group">
-        <label>Update details:</label>
         <input class="form-control" [(ngModel)]="childSelectedMeal.description">
       </div>
       <div class="form-group">
-        <label>Update calories:</label>
         <input class="form-control" [(ngModel)]="childSelectedMeal.calories">
       </div>
       <button class="btn btn-default center-block" (click)="doneClicked()">Update</button>

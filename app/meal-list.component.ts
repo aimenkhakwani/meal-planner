@@ -6,9 +6,8 @@ import { Meal } from './meal.model';
   template: `
     <div class="all-meals">
       <div class="form-group">
-      <label>Filter by calories</label>
         <select (change)="onChange($event.target.value)" class="form-control">
-          <option value="All">All Meals</option>
+          <option value="All" select="selected">Filter by calories</option>
           <option value="lessThan500">Less than 500 cal</option>
           <option value="moreThan500">More than (or equal to) 500 cal</option>
         </select>
