@@ -1,5 +1,19 @@
+body {
+  font-family: 'Arima Madurai', cursive;
+}
+header {
+  margin-top: 0px;
+  background: url("../../resources/img/header.jpeg");
+  background-size: cover;
+  height: 500px;
+  background-repeat: no-repeat;
+}
 h1 {
-
+  text-align: center;
+  font-size: 70px;
+  /*text-shadow: 3px 3px 3px #f2f2f2;*/
+  color: #fff;
+  padding-top: 50px;
 }
 .meal-click {
   cursor: pointer;
