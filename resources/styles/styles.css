@@ -7,6 +7,8 @@ header {
   background-size: cover;
   height: 500px;
   background-repeat: no-repeat;
+  box-shadow: 5px 5px 5px #f2f2f2;
+  margin-bottom: 30px;
 }
 h1 {
   text-align: center;
@@ -15,6 +17,13 @@ h1 {
   color: #fff;
   padding-top: 50px;
 }
+h2 {
+  text-align: center;
+}
 .meal-click {
   cursor: pointer;
+}
+.new-meal, .edit-meal, .all-meals {
+  padding-left: 50px;
+  padding-right: 50px;
 }

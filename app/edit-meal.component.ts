@@ -4,7 +4,7 @@ import { Meal } from './meal.model';
 @Component({
   selector: 'edit-meal',
   template: `
-    <div *ngIf="childSelectedMeal">
+    <div *ngIf="childSelectedMeal" class="edit-meal">
     <h2>Edit Meal</h2>
       <div class="form-group">
         <label>Update meal name:</label>
@@ -26,7 +26,7 @@ import { Meal } from './meal.model';
 export class EditMealComponent {
   @Input() childSelectedMeal: Meal;
   @Output() doneClickedSender = new EventEmitter();
-  
+
   doneClicked() {
     this.doneClickedSender.emit();
   }
