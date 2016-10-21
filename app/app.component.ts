@@ -28,8 +28,9 @@ import { Meal } from './meal.model';
 export class AppComponent {
   public mealList: Meal[] = [
     new Meal("Scrambled Eggs", "added cheese for yum factor", 400),
-    new Meal("Rice and Beans", "needed more sauce", 550),
+    new Meal("Rice and Beans", "needed more sauce", 500),
     new Meal("Choclate Cake", "soooo good!", 378),
+    new Meal("Fried Chicked", "one serving", 600),
   ];
 
   selectedMeal: Meal = null;
