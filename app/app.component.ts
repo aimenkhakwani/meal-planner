@@ -10,11 +10,16 @@ import { Meal } from './meal.model';
      <new-meal
       (newMealSender)="addMeal($event)"
      ></new-meal>
+     <edit-meal
+      [childSelectedMeal]="selectedMeal"
+      (doneClickedSender)="doneEditing()"
+      ></edit-meal>
    </div>
    <div class="col-md-6">
     <h2>Meals:</h2>
     <meal-list
       [childMealList]="mealList"
+      (clickSender)="showEditForm($event)"
     ></meal-list>
    </div>
   `
@@ -27,7 +32,17 @@ export class AppComponent {
     new Meal("Choclate Cake", "soooo good!", 378),
   ];
 
+  selectedMeal: Meal = null;
+
+  showEditForm(clickedMeal: Meal) {
+   this.selectedMeal = clickedMeal;
+  }
+
   addMeal(newMeal: Meal) {
     this.mealList.push(newMeal);
+  }
+
+  doneEditing() {
+  this.selectedMeal = null;
   }
 }

@@ -22,7 +22,7 @@ import { Meal } from './meal.model';
         mealName.value='';
         mealDetails.value='';
         mealCalories.value='';
-        " class="btn btn-default">Add</button>
+        " class="btn btn-default center-block">Add</button>
     </div>
   `
 })
