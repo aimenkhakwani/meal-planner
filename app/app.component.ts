@@ -6,10 +6,16 @@ import { Meal } from './meal.model';
   template: `
    <h1>Meal Tracker</h1>
    <div class="col-md-6">
-      <meal-list
+     <h2>Add a Meal</h2>
+     <new-meal
+      (newMealSender)="addMeal($event)"
+     ></new-meal>
+   </div>
+   <div class="col-md-6">
+    <h2>Meals:</h2>
+    <meal-list
       [childMealList]="mealList"
-      (clickSender)="showDetails($event)"
-      ></meal-list>
+    ></meal-list>
    </div>
   `
 })
@@ -21,8 +27,7 @@ export class AppComponent {
     new Meal("Choclate Cake", "soooo good!", 378),
   ];
 
-  selectedMeal: Meal = null;
-  showDetails(clickedMeal: Meal) {
-  this.selectedMeal = clickedMeal;
+  addMeal(newMeal: Meal) {
+    this.mealList.push(newMeal);
   }
 }

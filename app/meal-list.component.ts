@@ -5,7 +5,11 @@ import { Meal } from './meal.model';
   selector: 'meal-list',
   template: `
     <div *ngFor="let currentMeal of childMealList">
-      <h3 (click)="showMeal(currentMeal)">{{currentMeal.name}}</h3>
+      <div class="well">
+        <h3>{{currentMeal.name}}</h3>
+        <h4>Details: {{currentMeal.description}}</h4>
+        <h4>Calories: {{currentMeal.calories}}</h4>
+      </div>
     </div>
   `
 })
@@ -14,7 +18,4 @@ export class MealListComponent {
   @Input() childMealList: Meal[];
   @Output() clickSender = new EventEmitter();
 
-  showMeal(mealToDisplay: Meal){
-  this.clickSender.emit(mealToDisplay);
-  }
 }
